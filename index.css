@@ -1,0 +1,56 @@
+:root{
+    --bg-color: #121214;
+    --card-color: #202024;
+    --card-color-hover: #7c7c8a;
+    --text-color: #e1e1e6;
+    --line-color: #81d8f7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+
+    background-color: var(--bg-color);
+}
+
+.draggable {
+    cursor: move;
+    margin-bottom: 1rem;
+    user-select: none;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    height: 4rem;
+    width: 16rem;
+
+    border: 1px solid #cbd5e0;
+
+    color: var(--text-color);
+    font-weight: 700;
+    background-color: var(--card-color);
+    border-radius: 4px;
+
+    font-size: 1.5rem;
+}
+
+.draggable:hover{
+    background-color: var(--card-color-hover);
+}
+
+.placeholder {
+    background-color: var(--bg-color);
+    border: 2px dashed var(--line-color);
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
